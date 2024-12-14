@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/content.css">
+</head>
+
+<body class="bg-[#F8F8F8]">
+    <!-- Navbar Section -->
+    <nav class="relative">
+        <div class="h-16 w-[92vw] max-w-[1100px] bg-white fixed top-3 left-0 right-0 mx-auto shadow-md rounded-lg flex-wrap lg:flex-nowrap lg:flex items-center px-4 transition-all duration-100" id="menubar">
+            <div class="flex justify-between h-16">
+                <img class="w-40" src="https://englishrootme.com/wp-content/themes/rootmeenglish/images/logo-dark.svg" alt="Logo" />
+                <button class="px-7 py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn" aria-label="Toggle Menu" onclick="toggleDropdown()">
+                    <span class="text-xl">☰</span> 
+                </button>
+            </div>
+
+            <!-- Navbar Items (visible on larger screens) -->
+            <div id="navbar" class="lg:flex items-center space-x-4 w-full justify-between hidden lg:block">
+                <div class="flex-grow">
+                    <ul class="lg:flex gap-10 justify-center font-medium">
+                        <li><a class="hover:text-lime-500" href="#">Home</a></li>
+                        <li><a class="hover:text-lime-500" href="#">Courses</a></li>
+                        <li><a class="hover:text-lime-500" href="#">About</a></li>
+                        <li><a class="hover:text-lime-500" href="#">Team</a></li>
+                        <li><a class="hover:text-lime-500" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <button class="px-7 py-2 font-semibold text-[1rem] bg-lime-300 rounded-lg hover:bg-lime-400">
+                    Call Now
+                </button>
+            </div>
+
+            <!-- Mobile Dropdown Navbar (hidden by default) -->
+            <div id="mobile-navbar" class="lg:hidden absolute top-14 left-0 right-0 bg-white px-4 rounded-lg shadow-lg transition-all duration-500 max-h-0 overflow-hidden">
+                <ul class="space-y-4 py-4">
+                    <li><a class="hover:text-lime-500" href="#">Home</a></li>
+                    <li><a class="hover:text-lime-500" href="#">Courses</a></li>
+                    <li><a class="hover:text-lime-500" href="#">About</a></li>
+                    <li><a class="hover:text-lime-500" href="#">Team</a></li>
+                    <li><a class="hover:text-lime-500" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="w-screen h-screen flex justify-center items-center bg-black bg-opacity-10">
+        Main
+    </main>
+
+    <!-- Content Section -->
+    <section class="w-screen h-screen">
+        <div class="content-section flex justify-center items-center bg-[#181818] text-white py-12 px-4 h-screen p-2">
+            <div class="content-section__inner md:max-w-[60%] text-center">
+                <h1 class="content-section__text text-whitesmoke lg:text-5xl text-3xl md:text-4xl leading-relaxed tracking-wide space-x-2 lg:space-y-10">
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/js/menubar.js"></script>
+    <script src="/assets/js/content.js"></script>
+</body>
+
+</html>
