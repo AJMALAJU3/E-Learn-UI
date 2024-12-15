@@ -1,6 +1,5 @@
 /* content.css */
 
-/* Animations for letter fade effects */
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -1,0 +1,45 @@
+/* main.css */
+
+/* @import url('header.css'); */
+@import url('hoverCard.css');
+/* @import url('quote.css'); */
+@import url('content.css');
+/* @import url('theme.css'); */
+/* @import url('discover.css'); */
+/* @import url('footer.css'); */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: Arial, sans-serif;
+}
+
+/* Hide scrollbar but allow scrolling */
+.element {
+    overflow: auto; /* Keeps the element scrollable */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+    
+}
+
+.element::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+@keyframes transform-up {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

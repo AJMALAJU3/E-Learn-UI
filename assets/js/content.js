@@ -1,4 +1,4 @@
-const observer = new IntersectionObserver(
+const contentObserver = new IntersectionObserver(
     (entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -33,7 +33,7 @@ const observer = new IntersectionObserver(
                         contentElement.appendChild(space);
                     });
 
-                    observer.unobserve(entry.target);
+                    contentObserver.unobserve(entry.target);
                 }
             }
         });
@@ -43,4 +43,4 @@ const observer = new IntersectionObserver(
     }
 );
 
-document.querySelectorAll('.content-section').forEach((el) => observer.observe(el));
+document.querySelectorAll('.content-section').forEach((el) => contentObserver.observe(el));

@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-learn</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/css/content.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="bg-[#F8F8F8]">
+<body class="bg-[#181818]">
     <!-- Navbar Section -->
-    <nav class="relative">
-        <div class="h-16 w-[92vw] max-w-[1100px] bg-white fixed top-3 left-0 right-0 mx-auto shadow-md rounded-lg flex-wrap lg:flex-nowrap lg:flex items-center px-4 transition-all duration-100" id="menubar">
+    <nav class="relative z-50">
+        <div id="menubar"
+            class="h-16 w-[92vw] max-w-[1100px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-lg flex-wrap lg:flex-nowrap lg:flex items-center px-4 transition-all duration-1000 ease-in-out">
             <div class="flex justify-between h-16">
-                <img class="w-40" src="https://englishrootme.com/wp-content/themes/rootmeenglish/images/logo-dark.svg" alt="Logo" />
-                <button class="px-7 py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn" aria-label="Toggle Menu" onclick="toggleDropdown()">
-                    <span class="text-xl">☰</span> 
+                <div class="w-52 h-16 overflow-hidden">
+                    <!-- <img class="w-full h-full object-cover" src="/assets/Images/Talkease.png" alt="Logo" /> -->
+                </div>
+
+                <button class="px-7 py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn"
+                    aria-label="Toggle Menu" onclick="toggleDropdown()">
+                    <span class="text-xl">☰</span>
                 </button>
             </div>
 
@@ -24,33 +29,69 @@
             <div id="navbar" class="lg:flex items-center space-x-4 w-full justify-between hidden lg:block">
                 <div class="flex-grow">
                     <ul class="lg:flex gap-10 justify-center font-medium">
-                        <li><a class="hover:text-lime-500" href="#">Home</a></li>
-                        <li><a class="hover:text-lime-500" href="#">Courses</a></li>
-                        <li><a class="hover:text-lime-500" href="#">About</a></li>
-                        <li><a class="hover:text-lime-500" href="#">Team</a></li>
-                        <li><a class="hover:text-lime-500" href="#">Contact</a></li>
+                        <li><a href="">
+                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Home
+                                </p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">
+                                    Courses</p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">
+                                    About</p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Team
+                                </p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">
+                                    Contact</p>
+                            </a></li>
                     </ul>
                 </div>
-                <button class="px-7 py-2 font-semibold text-[1rem] bg-lime-300 rounded-lg hover:bg-lime-400">
+                <button
+                    class="px-7 z-30 py-2 bg-blue-400 rounded-md text-gray-50 relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-blue-600 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700">
                     Call Now
                 </button>
+                <!-- <button
+    class="px-7 z-30 py-2 bg-black rounded-md text-white relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-white hover:shadow-xl hover:text-black after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 "
+    >
+    Call Now
+    </button> -->
             </div>
 
             <!-- Mobile Dropdown Navbar (hidden by default) -->
-            <div id="mobile-navbar" class="lg:hidden absolute top-14 left-0 right-0 bg-white px-4 rounded-lg shadow-lg transition-all duration-500 max-h-0 overflow-hidden">
+            <div id="mobile-navbar"
+                class="lg:hidden absolute top-14 left-0 right-0 bg-gray-50 px-4 rounded-lg shadow-lg transition-all duration-1000 ease-in-out max-h-0 overflow-hidden">
                 <ul class="space-y-4 py-4">
-                    <li><a class="hover:text-lime-500" href="#">Home</a></li>
-                    <li><a class="hover:text-lime-500" href="#">Courses</a></li>
-                    <li><a class="hover:text-lime-500" href="#">About</a></li>
-                    <li><a class="hover:text-lime-500" href="#">Team</a></li>
-                    <li><a class="hover:text-lime-500" href="#">Contact</a></li>
+                    <li><a href="">
+                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Home</p>
+                        </a></li>
+                    <li><a href="">
+                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Courses
+                            </p>
+                        </a></li>
+                    <li><a href="">
+                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">About
+                            </p>
+                        </a></li>
+                    <li><a href="">
+                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Team</p>
+                        </a></li>
+                    <li><a href="">
+                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Contact
+                            </p>
+                        </a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <!-- Main Section -->
-    <main class="w-screen h-screen flex justify-center items-center bg-black bg-opacity-10">
+    <main class="w-screen h-screen flex justify-center items-center bg-[#F8F8F8] bg-opacity-10">
         Main
     </main>
 
@@ -58,14 +99,112 @@
     <section class="w-screen h-screen">
         <div class="content-section flex justify-center items-center bg-[#181818] text-white py-12 px-4 h-screen p-2">
             <div class="content-section__inner md:max-w-[60%] text-center">
-                <h1 class="content-section__text text-whitesmoke lg:text-5xl text-3xl md:text-4xl leading-relaxed tracking-wide space-x-2 lg:space-y-10">
+                <h1
+                    class="content-section__text text-whitesmoke lg:text-5xl text-3xl md:text-4xl leading-relaxed tracking-wide space-x-2 lg:space-y-10">
                 </h1>
             </div>
         </div>
     </section>
 
+    <section class="relative">
+
+        <div class="section pt-[13rem] transition-all duration-500" id="section1">
+            <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
+                <div class="content flex-1">
+                </div>
+                <div class="animate-content border rounded-xl bg-slate-100 flex-1 flex justify-center items-center">
+                    <div class="relative w-[28rem] h-[16rem] p-3" id="container">
+                        <div class="absolute top-16 left-6">
+                            <div
+                                class="w-16 h-36 rounded-full border bg-gray-200 relative  border-gray-300 overflow-hidden ">
+                                <div id="a"
+                                    class="w-16 h-16 bg-gray-50 shadow-xl flex items-center justify-center rounded-full absolute top-20">
+                                    <p class="p-3 bg-cyan-500 rounded-md"></p>
+                                </div>
+                                <div id="b"
+                                    class="w-16 h-16 flex items-center justify-center rounded-full absolute top-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="c"
+                            class="w-16 h-16 rounded-full border bg-gray-200 absolute top-4 left-24 border-gray-300">
+                        </div>
+                        <div id="l"
+                            class="w-16 h-16 rounded-full shadow-xl bg-gray-50 absolute top-44 left-24 flex items-center justify-center">
+                            <p class="p-3 bg-yellow-950 rounded-md"></p>
+                        </div>
+                        <div id="l"
+                            class="w-16 h-16 rounded-full border bg-gray-200 absolute top-24 left-24 border-gray-300">
+                        </div>
+                        <div id="f"
+                            class="w-16 h-16 rounded-full bg-white absolute top-24 left-44 shadow-xl flex justify-center items-center">
+                            <p class="p-3 rounded-full bg-amber-950"></p>
+                        </div>
+                        <div id="d"
+                            class="w-16 h-16 rounded-full bg-white absolute top-4 left-44 shadow-xl flex justify-center items-center">
+                            <p class="p-2 rounded-full bg-black"></p>
+                        </div>
+                        <div id="e"
+                            class="w-16 h-16 rounded-full bg-orange-600 absolute top-24 left-64 shadow-xl flex items-center justify-center">
+                            <p class="p-3 rounded-full bg-white"></p>
+                        </div>
+
+
+                        <div id="g"
+                            class="w-36 h-16 rounded-full border bg-gray-200 absolute top-44 left-44 border-gray-300 overflow-hidden">
+                        </div>
+                        <div class="w-16 h-16 rounded-full border bg-gray-200 absolute top-4 left-64 border-gray-300">
+                        </div>
+                        <div id="h"
+                            class="w-16 h-16 rounded-full shadow-xl bg-gray-50 absolute top-44 left-80 flex items-center justify-center ml-4">
+                            <p class="p-2 bg-yellow-400 rounded-md"></p>
+                        </div>
+                        <div id="j"
+                            class="w-16 h-16 rounded-full shadow-xl bg-yellow-400 absolute top-4 left-80 flex items-center justify-center ml-4">
+                            <p class="px-3 py-2 bg-white"></p>
+                        </div>
+                        <div id="i"
+                            class="w-16 h-16 rounded-full border bg-gray-200 absolute top-24 left-80 border-gray-300 ml-4">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="section pt-[13rem] transition-all  duration-500" id="section2">
+            <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
+                
+            </div>
+        </div>
+        </div>
+
+        <div class="section pt-[13rem] transition-all  duration-500 last" id="section3">
+            <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-2">
+                <h1>section 3</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- 
+    <section class="w-screen h-screen overflow-y-auto relative element bg-slate-400">
+        kkl
+    </section>
+    <section class="w-screen h-screen overflow-y-auto relative element bg-slate-400">
+        kkl
+    </section> -->
+
+
+
+    <script src="/assets/js/hoverCardOne.js"></script>
     <script src="/assets/js/menubar.js"></script>
     <script src="/assets/js/content.js"></script>
+    <script src="/assets/js/hoverCard.js"></script>
 </body>
 
 </html>
