@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="bg-[#181818]">
+<body class="bg-[#181818] flex justify-center flex-wrap">
     <!-- Navbar Section -->
     <nav class="relative z-50">
         <div id="menubar"
@@ -26,7 +26,7 @@
             </div>
 
             <!-- Navbar Items (visible on larger screens) -->
-            <div id="navbar" class="lg:flex items-center space-x-4 w-full justify-between hidden lg:block">
+            <div id="navbar" class="lg:flex items-center space-x-4 w-full justify-between hidden ">
                 <div class="flex-grow">
                     <ul class="lg:flex gap-10 justify-center font-medium">
                         <li><a href="">
@@ -64,7 +64,7 @@
 
             <!-- Mobile Dropdown Navbar (hidden by default) -->
             <div id="mobile-navbar"
-                class="lg:hidden absolute top-14 left-0 right-0 bg-gray-50 px-4 rounded-lg shadow-lg transition-all duration-1000 ease-in-out max-h-0 overflow-hidden">
+                class="lg:hidden absolute top-14 left-0 right-0 bg-gray-50 px-4 rounded-lg shadow-lg transition-all duration-1000 ease-in-out max-h-0 overflow-hidden element">
                 <ul class="space-y-4 py-4">
                     <li><a href="">
                             <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Home</p>
@@ -109,15 +109,28 @@
     <section class="relative">
 
         <div class="section pt-[13rem] transition-all duration-500" id="section1">
-            <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
-                <div class="content flex-1">
-                </div>
-                <div class="animate-content border rounded-xl bg-slate-100 flex-1 flex justify-center items-center">
-                    <div class="relative w-[28rem] h-[16rem] p-3" id="container">
-                        
+            <div class="w-[80vw] md:h-[50vh]  h-[18rem] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
+                <div class="content flex-1 flex items-center justify-center px-4">
+                    <div class="relative w-full max-w-[28rem] h-[16rem] p-3 overflow-y-auto py-3">
+                      <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
+                        Accessible. Anytime. Anywhere.
+                      </p>
+                      <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
+                        Discover our comprehensive range of financial courses designed to fit your schedule and lifestyle. With our
+                        accessible online platform, you can learn anytime, anywhere.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                <div
+                    class="animate-content border rounded-xl bg-slate-100 flex-1 justify-center items-center overflow-hidden  hidden  md:flex">
+                    <div class="md:relative w-[28rem] h-[16rem] p-3" id="container">
+
                         <div id="b"
-                                    class="w-16 h-32 bg-gray-200 border border-gray-300 flex items-center justify-center rounded-full absolute top-4 left-6">
-                                </div>
+                            class="w-16 h-32 bg-gray-200 border border-gray-300 flex items-center justify-center rounded-full absolute top-4 left-6">
+                        </div>
                         <div id="a"
                             class="w-16 h-16 bg-gray-50 shadow-xl flex items-center justify-center rounded-full absolute top-44 left-6">
                             <p class="p-3 bg-cyan-500 rounded-md"></p>
@@ -170,63 +183,63 @@
         </div>
 
 
-        <div class="section pt-[13rem] transition-all  duration-500" id="section2">
-            <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
-                <div class="content flex-1">
-                </div>
+        <div class="section pt-[13rem] transition-all duration-500" id="section1">
+            <div class="w-[80vw] md:h-[50vh]  h-[18rem] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
+                <div class="content flex-1 flex items-center justify-center px-4">
+                    <div class="relative w-full max-w-[28rem] h-[16rem] p-3 overflow-y-auto py-3">
+                      <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
+                        Learn from the best
+                      </p>
+                      <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
+                        Learn from real-world experiences, case studies, and best practices.
+                      </p>
+                    </div>
+                  </div>
                 <div
-                    class="animate-content border rounded-xl bg-slate-100 flex-1 flex justify-center items-center overflow-hidden relative">
+                    class="animate-content border rounded-xl bg-slate-100 flex-1  justify-center items-center overflow-hidden hidden md:flex relative">
                     <div
                         class=" bg-gradient-to-t from-slate-100 via-slate-100 absolute pt-16 left-0 right-0 bottom-0 z-10">
 
                     </div>
-                    <!-- /* From Uiverse.io by Darlley */  -->
                     <div class="h-full w-full flex items-center justify-center pt-[45%]">
                         <!-- first layer -->
                         <div class="relative p-8 border  rounded-full  border-gray-400/50">
-                            <span
-                               id="o"
+                            <span id="o"
                                 class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                                
+
                             </span>
-                            <span
-                            id="p"
+                            <span id="p"
                                 class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                                
+
                             </span>
-                            <span
-                            id="q"
+                            <span id="q"
                                 class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
 
                             </span>
                             <!-- second layer -->
                             <div class="relative p-8 border  rounded-full  border-gray-400/50">
-                                <span
-                                id="r"
+                                <span id="r"
                                     class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                                    
+
                                 </span>
-                                <span
-                                id="s"
+                                <span id="s"
                                     class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                                    
+
                                 </span>
 
 
                                 <!-- third layer -->
                                 <div class="relative p-8 border  rounded-full  border-gray-400/50">
-                                    <span
-                                    id="t"
+                                    <span id="t"
                                         class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                                       
+
                                     </span>
 
                                     <!-- fourth layer -->
                                     <div class="relative p-8 border  rounded-full  border-gray-400/50">
-                                        <span
-                                        id="u"
+                                        <span id="u"
                                             class="profile_item top-0 right-0 left-0 bottom-0 m-auto w-[35px] h-[35px] absolute rounded-full bg-cover cursor-pointer shadow-xl bg-white p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-                                            
+
                                         </span>
 
 
@@ -264,11 +277,9 @@
 
 
 
-    <!-- 
-    <section class="w-screen h-screen overflow-y-auto relative element bg-slate-400">
-        kkl
-    </section>
-    <section class="w-screen h-screen overflow-y-auto relative element bg-slate-400">
+
+
+    <!-- <section class="w-screen h-screen overflow-y-auto relative element bg-slate-400">
         kkl
     </section> -->
 

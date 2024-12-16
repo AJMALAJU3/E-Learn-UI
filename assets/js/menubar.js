@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let lastScrollTop = 0; 
+    let lastScrollTop = 0;
     const navbar = document.getElementById('menubar');
-    const mobileNavbar = document.getElementById('mobile-navbar'); 
+    const mobileNavbar = document.getElementById('mobile-navbar');
+    const navDropdownButton = document.getElementById('navdrop-btn');
 
     window.addEventListener('scroll', function () {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -19,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar.classList.remove('-top-20');
         }
 
+        mobileNavbar.classList.add('max-h-0', 'overflow-hidden');
+        mobileNavbar.classList.remove('max-h-56', 'overflow-auto');
+
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
     });
 
@@ -33,5 +37,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    document.getElementById('navdrop-btn').addEventListener('click', toggleDropdown);
+    navDropdownButton.addEventListener('click', toggleDropdown);
 });
