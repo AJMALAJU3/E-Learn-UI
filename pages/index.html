@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="bg-[#181818] flex justify-center flex-wrap">
-    <!-- Navbar Section -->
+<body class="bg-[#181818] flex justify-center flex-wrap ">
+
     <nav class="relative z-50">
         <div id="menubar"
             class="h-16 w-[92vw] max-w-[1100px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-lg flex-wrap lg:flex-nowrap lg:flex items-center px-4 transition-all duration-1000 ease-in-out">
@@ -19,13 +19,26 @@
                     <!-- <img class="w-full h-full object-cover" src="/assets/Images/Talkease.png" alt="Logo" /> -->
                 </div>
 
-                <button class="px-7 py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn"
-                    aria-label="Toggle Menu" onclick="toggleDropdown()">
-                    <span class="text-xl">☰</span>
+                <button class="lg:px-7 lg:py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn" aria-label="Toggle Menu">
+                    <span class="text-xl">
+                        <label for="nav_bar_icon"
+                            class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center space-y-[5px]">
+                            <input id="nav_bar_icon" type="checkbox" class="hidden peer" />
+                            <div
+                                class="w-[2rem] h-[3px] bg-blue-400 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[-45deg] peer-checked:translate-y-[-5px]">
+                            </div>
+                            <div
+                                class="w-[2rem] h-[3px] bg-blue-400 rounded-lg transition-all duration-300 origin-left peer-checked:translate-x-4 peer-checked:opacity-0 peer-checked:w-0">
+                            </div>
+                            <div
+                                class="w-[2rem] h-[3px] bg-blue-400 rounded-lg transition-all duration-300 origin-right peer-checked:w-full peer-checked:rotate-[45deg] peer-checked:translate-y-[5px]">
+                            </div>
+                        </label>
+                    </span>
                 </button>
             </div>
 
-            <!-- Navbar Items (visible on larger screens) -->
+
             <div id="navbar" class="lg:flex items-center space-x-4 w-full justify-between hidden ">
                 <div class="flex-grow">
                     <ul class="lg:flex gap-10 justify-center font-medium">
@@ -62,7 +75,7 @@
     </button> -->
             </div>
 
-            <!-- Mobile Dropdown Navbar (hidden by default) -->
+
             <div id="mobile-navbar"
                 class="lg:hidden absolute top-14 left-0 right-0 bg-gray-50 px-4 rounded-lg shadow-lg transition-all duration-1000 ease-in-out max-h-0 overflow-hidden element">
                 <ul class="space-y-4 py-4">
@@ -90,12 +103,12 @@
     </nav>
 
 
-    <!-- Main Section -->
+
     <main class="w-screen h-screen flex justify-center items-center bg-[#F8F8F8] bg-opacity-10">
         Main
     </main>
 
-    <!-- Content Section -->
+
     <section class="w-screen h-screen">
         <div class="content-section flex justify-center items-center bg-[#181818] text-white py-12 px-4 h-screen p-2">
             <div class="content-section__inner md:max-w-[60%] text-center">
@@ -112,18 +125,19 @@
             <div class="w-[80vw] md:h-[50vh]  h-[18rem] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
                 <div class="content flex-1 flex items-center justify-center px-4">
                     <div class="relative w-full max-w-[28rem] h-[16rem] p-3 overflow-y-auto py-3">
-                      <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
-                        Accessible. Anytime. Anywhere.
-                      </p>
-                      <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
-                        Discover our comprehensive range of financial courses designed to fit your schedule and lifestyle. With our
-                        accessible online platform, you can learn anytime, anywhere.
-                      </p>
+                        <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Accessible. Anytime. Anywhere.
+                        </p>
+                        <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
+                            Discover our comprehensive range of financial courses designed to fit your schedule and
+                            lifestyle. With our
+                            accessible online platform, you can learn anytime, anywhere.
+                        </p>
                     </div>
-                  </div>
-                  
-                  
-                  
+                </div>
+
+
+
                 <div
                     class="animate-content border rounded-xl bg-slate-100 flex-1 justify-center items-center overflow-hidden  hidden  md:flex">
                     <div class="md:relative w-[28rem] h-[16rem] p-3" id="container">
@@ -187,14 +201,14 @@
             <div class="w-[80vw] md:h-[50vh]  h-[18rem] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
                 <div class="content flex-1 flex items-center justify-center px-4">
                     <div class="relative w-full max-w-[28rem] h-[16rem] p-3 overflow-y-auto py-3">
-                      <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
-                        Learn from the best
-                      </p>
-                      <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
-                        Learn from real-world experiences, case studies, and best practices.
-                      </p>
+                        <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Learn from the best
+                        </p>
+                        <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
+                            Learn from real-world experiences, case studies, and best practices.
+                        </p>
                     </div>
-                  </div>
+                </div>
                 <div
                     class="animate-content border rounded-xl bg-slate-100 flex-1  justify-center items-center overflow-hidden hidden md:flex relative">
                     <div
@@ -266,29 +280,132 @@
             </div>
         </div>
         </div>
-
         <div class="section pt-[13rem] transition-all  duration-500 last" id="section3">
+            <div class="w-[80vw] md:h-[50vh]  h-[18rem] bg-gray-50 shadow-xl rounded-xl p-4 flex gap-5">
+                <div class="content flex-1 flex items-center justify-center px-4">
+                    <div class="relative w-full max-w-[28rem] h-[16rem] p-3 overflow-y-auto py-3">
+                        <p class="font-thin text-[2rem] leading-tight sm:text-[1.5rem] md:text-[1.8rem] lg:text-[2rem]">
+                            Get affordable pricing
+                        </p>
+                        <p class="font-thin text-base opacity-50 mt-4 sm:text-sm sm:mt-3 md:text-base lg:text-lg">
+                            Access our courses at affordable prices that fit your budget.
+                            We offer competitive pricing to ensure high-quality education is
+                            accessible to everyone, without breaking the bank.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="border rounded-xl bg-slate-100 flex-1 justify-center items-center overflow-hidden  hidden  md:flex">
+                    <div class="md:relative w-[28rem] h-[16rem] p-3">
+
+                        <div id="b"
+                            class="w-16 h-32 bg-gray-200 border border-gray-300 flex items-center justify-center rounded-full absolute top-4 left-6">
+                        </div>
+                        <div id="a"
+                            class="w-16 h-16 bg-gray-50 shadow-xl flex items-center justify-center rounded-full absolute top-44 left-6">
+                            <p class="p-3 bg-cyan-500 rounded-md"></p>
+                        </div>
+                        <div id="c"
+                            class="w-16 h-16 rounded-full border bg-gray-200 absolute top-4 left-24 border-gray-300">
+                        </div>
+                        <div id="l"
+                            class="w-16 h-16 rounded-full shadow-xl bg-gray-50 absolute top-44 left-24 flex items-center justify-center">
+                            <p class="p-3 bg-yellow-950 rounded-md"></p>
+                        </div>
+                        <div id="l"
+                            class="w-16 h-16 rounded-full border bg-gray-200 absolute top-24 left-24 border-gray-300">
+                        </div>
+                        <div id="f"
+                            class="w-16 h-16 rounded-full bg-white absolute top-24 left-44 shadow-xl flex justify-center items-center">
+                            <p class="p-3 rounded-full bg-amber-950"></p>
+                        </div>
+                        <div id="d"
+                            class="w-16 h-16 rounded-full bg-white absolute top-4 left-44 shadow-xl flex justify-center items-center">
+                            <p class="p-2 rounded-full bg-black"></p>
+                        </div>
+                        <div id="e"
+                            class="w-16 h-16 rounded-full bg-orange-600 absolute top-24 left-64 shadow-xl flex items-center justify-center">
+                            <p class="p-3 rounded-full bg-white"></p>
+                        </div>
+
+
+                        <div id="g"
+                            class="w-36 h-16 rounded-full border bg-gray-200 absolute top-44 left-44 border-gray-300 overflow-hidden">
+                        </div>
+                        <div class="w-16 h-16 rounded-full border bg-gray-200 absolute top-4 left-64 border-gray-300">
+                        </div>
+                        <div id="h"
+                            class="w-16 h-16 rounded-full shadow-xl bg-gray-50 absolute top-44 left-80 flex items-center justify-center ml-4">
+                            <p class="p-2 bg-yellow-400 rounded-md"></p>
+                        </div>
+                        <div id="j"
+                            class="w-16 h-16 rounded-full shadow-xl bg-yellow-400 absolute top-4 left-80 flex items-center justify-center ml-4">
+                            <p class="px-3 py-2 bg-white"></p>
+                        </div>
+                        <div id="i"
+                            class="w-16 h-16 rounded-full border bg-gray-200 absolute top-24 left-80 border-gray-300 ml-4">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- <div class="section pt-[13rem] transition-all  duration-500 last" id="section3">
             <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-2">
                 <h1>section 3</h1>
             </div>
-        </div>
+        </div> -->
     </section>
 
 
-
-
-
-
-    <!-- <section class="w-screen h-screen overflow-y-auto relative element bg-slate-400">
-        kkl
-    </section> -->
-
+    <section class="md:pt-[30rem] pt-[20rem] w-full text-gray-800">
+        <div class="md:flex md:flex-nowrap flex-wrap bg-slate-100 rounded-t-3xl md:py-20 py-10 md:px-10 px-5 ">
+            <!-- Links Section -->
+            <div class="lg:flex-1 md:text-lg text-sm space-y-4 sliding-div">
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gray-600">Benefits</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Our Partners</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Courses</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Testimonials</a></li>
+                </ul>
+                <div class="mt-4">
+                    <input 
+                        type="email" 
+                        class="bg-slate-100 border-b-2 border-gray-800 focus:border-gray-600 focus:outline-none text-sm pl-2 py-1 w-[70%]" 
+                        placeholder="Email address"
+                    />
+                    <button class="ml-2 bg-blue-400 text-white px-3 py-1 rounded-md text-sm hover:bg-blue-500">Subscribe</button>
+                </div>
+            </div>
+    
+            <!-- Brand Animation Section -->
+            <div class="md:flex-1 flex justify-center items-center">
+                <div class="footer-brand-name">
+                    <div class="brand-name-text flex gap-2">
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">F</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">I</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">N</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">G</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">R</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">O</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">W</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
     <script src="/assets/js/hoverCardOne.js"></script>
     <script src="/assets/js/menubar.js"></script>
     <script src="/assets/js/content.js"></script>
     <script src="/assets/js/hoverCard.js"></script>
+    <script src="/assets/js/footer.js"></script>
 </body>
 
 </html>

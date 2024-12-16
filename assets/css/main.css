@@ -2,11 +2,11 @@
 
 /* @import url('header.css'); */
 @import url('hoverCard.css');
-/* @import url('quote.css'); */
+/* @import url('flipcard.css'); */
 @import url('content.css');
 @import url('card2anime.css');
 /* @import url('discover.css'); */
-/* @import url('footer.css'); */
+@import url('footer.css');
 
 
 * {

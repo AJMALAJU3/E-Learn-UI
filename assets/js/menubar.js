@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
     const navbar = document.getElementById('menubar');
     const mobileNavbar = document.getElementById('mobile-navbar');
-    const navDropdownButton = document.getElementById('navdrop-btn');
+    const navBarIcon = document.getElementById('nav_bar_icon'); 
+
 
     window.addEventListener('scroll', function () {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -20,22 +21,24 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar.classList.remove('-top-20');
         }
 
+
         mobileNavbar.classList.add('max-h-0', 'overflow-hidden');
         mobileNavbar.classList.remove('max-h-56', 'overflow-auto');
 
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+
+        navBarIcon.checked = false;
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 
-    const toggleDropdown = () => {
-        if (mobileNavbar.classList.contains('max-h-0')) {
-            mobileNavbar.classList.remove('rounded-lg');
-            mobileNavbar.classList.remove('max-h-0', 'overflow-hidden');
+
+    navBarIcon.addEventListener('change', function () {
+        if (navBarIcon.checked) {
+            mobileNavbar.classList.remove('rounded-lg', 'max-h-0', 'overflow-hidden');
             mobileNavbar.classList.add('max-h-56', 'overflow-auto', 'rounded-b-lg');
         } else {
             mobileNavbar.classList.add('max-h-0', 'overflow-hidden');
-            mobileNavbar.classList.remove('max-h-56', 'overflow-auto');
+            mobileNavbar.classList.remove('max-h-56', 'overflow-auto', 'rounded-b-lg');
         }
-    };
-
-    navDropdownButton.addEventListener('click', toggleDropdown);
+    });
 });
