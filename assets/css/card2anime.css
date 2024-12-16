@@ -1,0 +1,98 @@
+#o {
+    animation: moveInCircleO 10s linear infinite;
+}
+#p {
+  animation: moveInCircleP 10s linear infinite;
+}
+#q {
+  animation: moveInCircleQ 10s linear infinite;
+}
+#r {
+  animation: moveInCircleR 10s linear infinite;
+}
+#s {
+  animation: moveInCircleS 10s linear infinite;
+}
+#t {
+  animation: moveInCircleT 10s linear infinite;
+}
+#u {
+  animation: moveInCircleU 10s linear infinite;
+}
+@keyframes moveInCircleU {
+  0% {
+    transform: rotate(30deg) translate(-110px)  ;
+  }
+  50% {
+    transform: rotate(80deg) translate(-110px)  ;
+  }
+  100% {
+    transform: rotate(30deg) translate(-110px)  ;
+  }
+}
+@keyframes moveInCircleT {
+  0% {
+    transform: rotate(170deg) translate(-147px)  ;
+  }
+  50% {
+    transform: rotate(150deg) translate(-147px)  ;
+  }
+  100% {
+    transform: rotate(170deg) translate(-147px)  ;
+  }
+}
+@keyframes moveInCircleS {
+  0% {
+    transform: rotate(110deg) translate(-177px)  ;
+  }
+  50% {
+    transform: rotate(130deg) translate(-177px)  ;
+  }
+  100% {
+    transform: rotate(110deg) translate(-177px)  ;
+  }
+}
+@keyframes moveInCircleR {
+  0% {
+    transform: rotate(60deg) translate(-177px)  ;
+  }
+  50% {
+    transform: rotate(50deg) translate(-177px)  ;
+  }
+  100% {
+    transform: rotate(60deg) translate(-177px)  ;
+  }
+}
+@keyframes moveInCircleQ {
+  0% {
+    transform: rotate(10deg) translate(-210px)  ;
+  }
+  50% {
+    transform: rotate(30deg) translate(-210px)  ;
+  }
+  100% {
+    transform: rotate(10deg) translate(-210px)  ;
+  }
+}
+@keyframes moveInCircleP {
+  0% {
+    transform: rotate(140deg) translate(-210px)  ;
+  }
+  50% {
+    transform: rotate(160deg) translate(-210px)  ;
+  }
+  100% {
+    transform: rotate(140deg) translate(-210px)  ;
+  }
+}
+@keyframes moveInCircleO {
+      0% {
+        transform: rotate(65deg) translate(-210px)  ;
+      }
+      50% {
+        transform: rotate(80deg) translate(-210px)  ;
+      }
+      100% {
+        transform: rotate(65deg) translate(-210px)  ;
+      }
+}

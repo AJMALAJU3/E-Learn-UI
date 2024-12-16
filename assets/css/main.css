@@ -4,7 +4,7 @@
 @import url('hoverCard.css');
 /* @import url('quote.css'); */
 @import url('content.css');
-/* @import url('theme.css'); */
+@import url('card2anime.css');
 /* @import url('discover.css'); */
 /* @import url('footer.css'); */
 
@@ -43,3 +43,20 @@ body {
     }
 }
 
+/* @keyframes moveInCircle {
+    0% {
+      transform: rotate(0deg) translateX(10px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(30deg) translateX(150px) rotate(-360deg);
+    }
+  }
+  
+  .profile_item {
+    animation: moveInCircle 10s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+  }
+   */

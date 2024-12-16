@@ -17,21 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000);
     }
 
-    function performSwapping(x,y,a,b) {
-        swapPositions(a,b);
-        swapPositions(x,y);
-    }
-    function performSwappingB() {
-        swapPositions("a", "b");
-    }
+    
 
     function handleIntersection(entries) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                performSwapping("e","f","c","d");
-                performSwappingB()
+                swapPositions('e','f');
+                swapPositions('d','c');
                 setTimeout(()=>{
-                    performSwapping("g","h","i","j");
+                    swapPositions('g','h');
+                    swapPositions('i','j');
+                    swapPositions('a','b');
                 },1000)
             }
         });
