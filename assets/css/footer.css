@@ -18,8 +18,8 @@ body {
 
 .text-animate {
     opacity: 0;
-    transform: translateY(20px);
-    animation: textSlideIn 0.6s ease forwards;
+    transform: translateY(100px);
+    animation: textSlideIn 1.5s ease forwards;
 }
 
 .text-animate:nth-child(1) {
