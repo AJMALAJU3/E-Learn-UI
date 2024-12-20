@@ -13,11 +13,20 @@
 
     <nav class="relative z-50">
         <div id="menubar"
-            class="h-16 w-[92vw] max-w-[1100px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-lg flex-wrap lg:flex-nowrap lg:flex items-center px-4 transition-all duration-1000 ease-in-out">
+            class="h-16 w-[92vw] max-w-[900px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-full flex-wrap lg:flex-nowrap lg:flex items-center px-6 transition-all duration-1000 ease-in-out">
             <div class="flex justify-between h-16">
-                <div class="w-52 h-16 overflow-hidden">
-                    <!-- <img class="w-full h-full object-cover" src="/assets/Images/Talkease.png" alt="Logo" /> -->
+                <div class="w-48 h-16 overflow-hidden">
+                    <img src="/assets/Images/Talkease.png" 
+                         srcset="/assets/Images/Talkease-400.jpg 400w, 
+                                 /assets/Images/Talkease-800.jpg 800w, 
+                                 /assets/Images/Talkease.png 1200w" 
+                         sizes="(max-width: 200px) 100px, 
+                                (max-width: 600px) 400px, 
+                                900px" 
+                         alt="Logo" />
                 </div>
+                
+
 
                 <button class="lg:px-7 lg:py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn" aria-label="Toggle Menu">
                     <span class="text-xl">
@@ -65,7 +74,7 @@
                     </ul>
                 </div>
                 <button
-                    class="px-7 z-30 py-2 bg-blue-400 rounded-md text-gray-50 relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-blue-600 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700">
+                    class="px-7 z-30 py-2 bg-red-500 rounded-full text-gray-50 relative font-semibold after:-z-20 after:absolute after:h-1 after:w-1 after:bg-red-700 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700">
                     Call Now
                 </button>
                 <!-- <button
