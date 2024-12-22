@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobileNavbar = document.getElementById('mobile-navbar');
     const navBarIcon = document.getElementById('nav_bar_icon'); 
 
-
+    // Scroll behavior for navbar
     window.addEventListener('scroll', function () {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -21,24 +21,27 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar.classList.remove('-top-20');
         }
 
-
-        mobileNavbar.classList.add('max-h-0', 'overflow-hidden');
-        mobileNavbar.classList.remove('max-h-56', 'overflow-auto');
-
-
+        // Close mobileNavbar by default when scrolling
+        mobileNavbar.classList.add('overflow-hidden', 'max-h-0');
+        mobileNavbar.classList.remove('overflow-auto', 'rounded-b-lg');
+        mobileNavbar.style.maxHeight = '0'; // Close by setting max-height to 0
         navBarIcon.checked = false;
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 
-
+    // Toggling the navbar on and off
     navBarIcon.addEventListener('change', function () {
         if (navBarIcon.checked) {
-            mobileNavbar.classList.remove('rounded-lg', 'max-h-0', 'overflow-hidden');
-            mobileNavbar.classList.add('max-h-56', 'overflow-auto', 'rounded-b-lg');
+            // Expand mobile navbar
+            mobileNavbar.classList.remove('overflow-hidden', 'max-h-0');
+            mobileNavbar.classList.add('overflow-auto', 'rounded-b-lg');
+            mobileNavbar.style.maxHeight = `${mobileNavbar.scrollHeight}px`; // Adjust to fit content
         } else {
-            mobileNavbar.classList.add('max-h-0', 'overflow-hidden');
-            mobileNavbar.classList.remove('max-h-56', 'overflow-auto', 'rounded-b-lg');
+            // Collapse mobile navbar
+            mobileNavbar.classList.add('overflow-hidden', 'max-h-0');
+            mobileNavbar.classList.remove('overflow-auto', 'rounded-b-lg');
+            mobileNavbar.style.maxHeight = '0'; // Close by setting max-height to 0
         }
     });
 });

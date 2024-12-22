@@ -13,13 +13,11 @@
 
     <nav class="relative z-10">
         <div id="menubar"
-            class="h-16 w-[92vw] max-w-[900px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-full flex-wrap lg:flex-nowrap lg:flex items-center px-6 transition-all duration-1000 ease-in-out">
+            class="h-16 w-[92vw] max-w-[900px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-[30px] flex-wrap lg:flex-nowrap lg:flex items-center px-6 transition-all duration-1000 ease-in-out">
             <div class="flex justify-between h-16">
-                <div class="w-40 h-16 overflow-hidden">
-                    <!-- <img src="/assets/Images/Talkease.png" alt="Logo" /> -->
+                <div class="w-32 h-16 overflow-hidden">
+                    <!-- <img src="/assets/Images/Talkease.png" alt="Logo" class="w-full h-full object-cover" /> -->
                 </div>
-
-
 
                 <button class="lg:px-7 lg:py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn"
                     aria-label="Toggle Menu">
@@ -80,24 +78,25 @@
 
 
             <div id="mobile-navbar"
-                class="lg:hidden absolute top-14 left-0 right-0 bg-gray-50 px-4 rounded-lg shadow-lg transition-all duration-1000 ease-in-out max-h-0 overflow-hidden element">
-                <ul class="space-y-4 py-4">
+            class="lg:hidden absolute top-9 -z-20 left-0 right-0 bg-gray-50 px-4 rounded-b-[30px] shadow-lg 
+            transition-all duration-1000 ease-in-out max-h-0 overflow-hidden">
+             <ul class="space-y-4 py-8">
                     <li><a href="">
-                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Home</p>
+                            <p class=" hover:text-red-500" href="#">Home</p>
                         </a></li>
                     <li><a href="">
-                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Courses
+                            <p class=" hover:text-red-500" href="#">Courses
                             </p>
                         </a></li>
                     <li><a href="">
-                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">About
+                            <p class=" hover:text-red-500" href="#">About
                             </p>
                         </a></li>
                     <li><a href="">
-                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Team</p>
+                            <p class=" hover:text-red-500" href="#">Team</p>
                         </a></li>
                     <li><a href="">
-                            <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Contact
+                            <p class=" hover:text-red-500" href="#">Contact
                             </p>
                         </a></li>
                 </ul>
@@ -359,10 +358,119 @@
         </div>
 
     </section>
+    <style>
+        .transition-10s {
+            transition-duration: 7s;
+        }
+
+        .transition-5s {
+            transition-duration: 5s;
+        }
+
+        .transition-15s {
+            transition-duration: 10s;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Elements for translate-y-56
+            const trans56 = document.querySelectorAll(".translate-y-56");
+            const observer56 = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.remove("translate-y-56"); // Remove initial translation
+                            entry.target.classList.add("-translate-y-20"); // Add final position
+                        } else {
+                            entry.target.classList.remove("-translate-y-20"); // Remove final position
+                            entry.target.classList.add("translate-y-56"); // Revert to initial position
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1, // Trigger when 10% of the element is visible
+                }
+            );
+
+            trans56.forEach((element) => observer56.observe(element));
+
+            
+        });
 
 
-    <section class="md:pt-[30rem] pt-[20rem] w-full text-white">
-        <div class="md:flex md:flex-nowrap flex-wrap bg-[#051735] rounded-t-3xl md:py-20 py-10 md:px-10 px-5 ">
+    </script>
+
+    <section class="p-4 w-full pt-40 pb-20 text-white  bg-gray-200 flex  justify-center gap-6">
+
+        <!-- Column 1 -->
+        <div
+            class="translate-y-56 transition-all transition-10s ease-out hidden sm:flex  flex-col max-w-[18rem] gap-5 items-start w-full sm:w-auto">
+            <div class="flex-grow p-4 max-w-72  bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72  bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="flex translate-y-56 transition-all transition-5s ease-out flex-col gap-5 items-start  sm:w-auto">
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>Adjustable content allows resizing without disrupting the layout of the column.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div
+            class="translate-y-56 transition-all transition-15s ease-out hidden md:flex flex-col gap-5 items-start w-full sm:w-auto">
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+        </div>
+
+        <!-- Column 4 -->
+        <div
+            class="translate-y-56 transition-all transition-10s ease-out flex-col gap-5 items-start w-full sm:w-auto hidden lg:flex">
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+            <div class="flex-grow p-4 max-w-72 bg-gray-700 rounded-lg pt-10 pb-20">
+                <p>This is some longer text to demonstrate content wrapping inside the card. The card adjusts its size
+                    dynamically.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full text-white bg-gray-200">
+        <div class="md:flex md:flex-nowrap flex-wrap bg-[#051735]  rounded-t-3xl md:py-20 py-10 md:px-10 px-5 ">
             <!-- Links Section -->
             <div class="lg:flex-1 md:text-lg text-sm space-y-4 sliding-div">
                 <ul class="space-y-2">
@@ -393,7 +501,7 @@
 
 
     <section id="form-container"
-        class="w-screen h-screen flex justify-center items-center z-50 fixed bg-black bg-opacity-80 ">
+        class="w-screen h-screen flex justify-center items-center z-50 fixed bg-black bg-opacity-80 hidden">
         <div id="popupForm" class="max-w-screen h-auto bg-white p-4 rounded-xl relative ">
             <div class="md:w-[40vw] w-[90vw] ">
                 <span id="close-btn"
@@ -425,7 +533,7 @@
     <script src="/assets/js/content.js"></script>
     <script src="/assets/js/hoverCard.js"></script>
     <script src="/assets/js/footer.js"></script>
-    <script src="/assets/js/popupForm.js"></script>
+    <!-- <script src="/assets/js/popupForm.js"></script> -->
 </body>
 
 </html>
