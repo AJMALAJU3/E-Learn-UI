@@ -9,26 +9,20 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
-<body class="bg-[#181818] flex justify-center flex-wrap ">
+<body class="bg-black flex justify-center flex-wrap ">
 
-    <nav class="relative z-50">
+    <nav class="relative z-10">
         <div id="menubar"
             class="h-16 w-[92vw] max-w-[900px] bg-gray-50 fixed top-5 left-0 right-0 mx-auto shadow-md rounded-full flex-wrap lg:flex-nowrap lg:flex items-center px-6 transition-all duration-1000 ease-in-out">
             <div class="flex justify-between h-16">
-                <div class="w-48 h-16 overflow-hidden">
-                    <img src="/assets/Images/Talkease.png" 
-                         srcset="/assets/Images/Talkease-400.jpg 400w, 
-                                 /assets/Images/Talkease-800.jpg 800w, 
-                                 /assets/Images/Talkease.png 1200w" 
-                         sizes="(max-width: 200px) 100px, 
-                                (max-width: 600px) 400px, 
-                                900px" 
-                         alt="Logo" />
+                <div class="w-40 h-16 overflow-hidden">
+                    <!-- <img src="/assets/Images/Talkease.png" alt="Logo" /> -->
                 </div>
-                
 
 
-                <button class="lg:px-7 lg:py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn" aria-label="Toggle Menu">
+
+                <button class="lg:px-7 lg:py-2 font-semibold text-[1rem] rounded-lg lg:hidden" id="navdrop-btn"
+                    aria-label="Toggle Menu">
                     <span class="text-xl">
                         <label for="nav_bar_icon"
                             class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center space-y-[5px]">
@@ -52,23 +46,23 @@
                 <div class="flex-grow">
                     <ul class="lg:flex gap-10 justify-center font-medium">
                         <li><a href="">
-                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Home
+                                <p class=" transition-all duration-300 hover:text-red-500" href="#">Home
                                 </p>
                             </a></li>
                         <li><a href="">
-                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">
+                                <p class=" transition-all duration-300 hover:text-red-500" href="#">
                                     Courses</p>
                             </a></li>
                         <li><a href="">
-                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">
+                                <p class=" transition-all duration-300 hover:text-red-500" href="#">
                                     About</p>
                             </a></li>
                         <li><a href="">
-                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">Team
+                                <p class=" transition-all duration-300 hover:text-red-500" href="#">Team
                                 </p>
                             </a></li>
                         <li><a href="">
-                                <p class="hover:scale-110 transition-all duration-300 hover:text-blue-500" href="#">
+                                <p class=" transition-all duration-300 hover:text-red-500" href="#">
                                     Contact</p>
                             </a></li>
                     </ul>
@@ -119,7 +113,7 @@
 
 
     <section class="w-screen h-screen">
-        <div class="content-section flex justify-center items-center bg-[#181818] text-white py-12 px-4 h-screen p-2">
+        <div class="content-section flex justify-center items-center bg-[#051735a7] text-white py-12 px-4 h-screen p-2">
             <div class="content-section__inner md:max-w-[60%] text-center">
                 <h1
                     class="content-section__text text-whitesmoke lg:text-5xl text-3xl md:text-4xl leading-relaxed tracking-wide space-x-2 lg:space-y-10">
@@ -363,16 +357,12 @@
 
             </div>
         </div>
-        <!-- <div class="section pt-[13rem] transition-all  duration-500 last" id="section3">
-            <div class="w-[80vw] h-[50vh] bg-gray-50 shadow-xl rounded-xl p-2">
-                <h1>section 3</h1>
-            </div>
-        </div> -->
+
     </section>
 
 
-    <section class="md:pt-[30rem] pt-[20rem] w-full text-gray-800">
-        <div class="md:flex md:flex-nowrap flex-wrap bg-slate-100 rounded-t-3xl md:py-20 py-10 md:px-10 px-5 ">
+    <section class="md:pt-[30rem] pt-[20rem] w-full text-white">
+        <div class="md:flex md:flex-nowrap flex-wrap bg-[#051735] rounded-t-3xl md:py-20 py-10 md:px-10 px-5 ">
             <!-- Links Section -->
             <div class="lg:flex-1 md:text-lg text-sm space-y-4 sliding-div">
                 <ul class="space-y-2">
@@ -381,40 +371,61 @@
                     <li><a href="#" class="hover:text-gray-600">Courses</a></li>
                     <li><a href="#" class="hover:text-gray-600">Testimonials</a></li>
                 </ul>
-                <div class="mt-4">
-                    <input 
-                        type="email" 
-                        class="bg-slate-100 border-b-2 border-gray-800 focus:border-gray-600 focus:outline-none text-sm pl-2 py-1 w-[70%]" 
-                        placeholder="Email address"
-                    />
-                    <button class="ml-2 bg-blue-400 text-white px-3 py-1 rounded-md text-sm hover:bg-blue-500">Subscribe</button>
-                </div>
             </div>
-    
+
             <!-- Brand Animation Section -->
             <div class="md:flex-1 flex justify-center items-center">
                 <div class="footer-brand-name">
                     <div class="brand-name-text flex gap-2">
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">F</span>
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">I</span>
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">N</span>
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">G</span>
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">R</span>
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">O</span>
-                        <span class="text-animate font-extrabold md:text-8xl text-5xl">W</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">T</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">A</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">L</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">K</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">E</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">A</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">S</span>
+                        <span class="text-animate font-extrabold md:text-8xl text-5xl">E</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
 
+
+    <section id="form-container"
+        class="w-screen h-screen flex justify-center items-center z-50 fixed bg-black bg-opacity-80 ">
+        <div id="popupForm" class="max-w-screen h-auto bg-white p-4 rounded-xl relative ">
+            <div class="md:w-[40vw] w-[90vw] ">
+                <span id="close-btn"
+                    class="p-2 bg-red-500 absolute text-white hover:bg-red-600 rounded-tr-xl rounded-bl-xl top-0 right-0">&times;</span>
+                <form id="form" class="flex flex-col p-4 gap-5">
+                    <div class="flex flex-col">
+                        <label for="name" class="">Name:</label>
+                        <input type="text" id="name" name="name" required class="p-2 border rounded-md">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="mobile" class="">Mobile:</label>
+                        <input type="number" id="mobile" name="mobile" required class="p-2 border rounded-md">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="">Email:</label>
+                        <input type="email" id="email" name="email" required class="p-2 border rounded-md">
+                    </div>
+                    <button
+                        class="w-auto z-30 py-2 bg-red-500 rounded-full text-gray-50 relative  after:-z-20 after:absolute after:h-1 after:w-1 after:bg-red-700 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700">
+                        Confirm
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <script src="/assets/js/hoverCardOne.js"></script>
     <script src="/assets/js/menubar.js"></script>
     <script src="/assets/js/content.js"></script>
     <script src="/assets/js/hoverCard.js"></script>
     <script src="/assets/js/footer.js"></script>
+    <script src="/assets/js/popupForm.js"></script>
 </body>
 
 </html>

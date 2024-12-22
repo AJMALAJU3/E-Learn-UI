@@ -4,7 +4,7 @@ const contentObserver = new IntersectionObserver(
             if (entry.isIntersecting) {
                 if (entry.intersectionRatio >= 0.5) { 
                     const contentElement = entry.target.querySelector('.content-section__text');
-                    const content = 'If you want people to have fun—give them the day off. If you want them to learn... engage them with the content.';
+                    const content = 'Speak English like you’ve always dreamed – effortlessly.Trusted by learners in 30+ countries!';
                     const words = content.split(' ');
                     words.forEach((word, ind) => {
                         const wordSpan = document.createElement('span');

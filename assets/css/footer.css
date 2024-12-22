@@ -50,6 +50,10 @@ body {
     animation-delay: 1.4s;
 }
 
+.text-animate:nth-child(8) {
+    animation-delay: 1.6s;
+}
+
 
 @keyframes textSlideIn {
     from {
